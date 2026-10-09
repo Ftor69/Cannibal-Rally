@@ -1,0 +1,21 @@
+name: Native core (not an in-game build)
+on:
+  push:
+    branches: [main, cannibal-rally-native-modapi]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  core:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Check original native source layout
+        run: python3 scripts/check_native.py
+      - name: Compile and test the actual shared C# core
+        run: dotnet run --project native/Tests/CoreTests.csproj --configuration Release
+      - name: Test preparation and build prerequisite checks
+        run: python3 -m unittest discover -s native/Tests -p 'test_*.py' -v
