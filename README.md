@@ -23,7 +23,7 @@
 python scripts/check_native.py
 python -m unittest discover -s native/Tests -p 'test_*.py' -v
 # .NET 8 SDK: только тест общей логики, не сборка Unity-мода
- dotnet run --project native/Tests/CoreTests.csproj --configuration Release
+dotnet run --project native/Tests/CoreTests.csproj --configuration Release
 ```
 
 [Совместимость и источники](docs/COMPATIBILITY.md) · [Статус проверок](docs/VALIDATION.md) · [Что остаётся для Melty](docs/HANDOFF.md).
