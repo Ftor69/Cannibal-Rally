@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RallyConfig>
+  <Profile>sandbox</Profile>
+  <TankLitres>30</TankLitres>
+  <IdleLitresPerSecond>0.002</IdleLitresPerSecond>
+  <LoadLitresPerSecond>0.015</LoadLitresPerSecond>
+  <WheelTorque>650</WheelTorque>
+  <BrakeTorque>1800</BrakeTorque>
+  <MaxSpeed>28</MaxSpeed>
+  <CollisionDamageScale>2</CollisionDamageScale>
+  <PassengerDamageScale>2</PassengerDamageScale>
+</RallyConfig>

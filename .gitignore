@@ -16,3 +16,15 @@ melty-local/
 credentials.json
 secrets.json
 __pycache__/
+
+
+# Native local build and private setup
+**/bin/
+**/obj/
+**/__pycache__/
+*.dll
+*.pdb
+*.mod
+*.pre-rally.bak
+*.xml.bak
+*.xml.tmp
